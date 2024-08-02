@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paynow QR Code</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .image-container {
+            text-align: center;
+            width: 2000px;
+        }
+
+        img {
+            width: 25%;
+            border: 3px solid #333;
+        }
+
+        .scan {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        button{
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="paynow.png" alt="QR Code">
+        <div class="scan">Scan Pay</div>
+        <br>
+        <button type="button" onclick="navigateToPage()">Done</button>
+        <script>
+            function navigateToPage() {
+                window.location.href = "successful.html";
+            }
+        </script>
+    </div>
+</body>
+
+</html>
